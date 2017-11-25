@@ -1,4 +1,52 @@
+body{
+  background-color: #D7DADB;
+}
+#contents{
+  background-color: white;
+  color:#324C50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top,margin-bottom: 5vh;
+  margin-left,margin-right: 5vw;
+
+}
 img{
     height: 256px;
     width: 256px;
+    margin: 12px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+h1,p{
+  margin-top:2vh;
+  margin-bottom: 2vh;
+    text-align: center;
+}
+#imagelist{
+  margin-top,margin-bottom: 5vh;
+  object-fit: cover;
+  flex-wrap: wrap;
+  text-align: center;
+}
+/*css rules for phones*/
+@media only screen and (max-width:400px)
+{
+  #contents{
+    text-align: justify;
+  }
+}
+/*css rules for tablets*/
+@media only screen and (max-width:800px)
+{
+  #contents{
+    margin-top:1vh;
+    margin-left,margin-right:2vw;
+  }
+}
+/*css rules for desktops*/
+@media only screen and (min-width:801px)
+{
+  #contents{
+    margin-top:3vh;
+    margin-left,margin-right:4vw;
+  }
 }
