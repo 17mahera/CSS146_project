@@ -15,17 +15,27 @@ img{
     margin: 12px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
+#Explanation-text{
+  text-align: center;
 
-h1,p{
-  margin-top:2vh;
-  margin-bottom: 2vh;
-    text-align: center;
+}
+#imagelist>div{
+  height,width: 200px;
+  margin:12px;
+
+}
+.Central-text{
+  margin-top,margin-bottom:2vh;
+  padding-bottom:2vh;
+  text-align: center;
 }
 #imagelist{
   margin-top,margin-bottom: 5vh;
   object-fit: cover;
   flex-wrap: wrap;
   text-align: center;
+  display:flex;
+  justify-content: center;
 }
 /*css rules for phones*/
 @media only screen and (max-width:400px)
