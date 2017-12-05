@@ -34,14 +34,20 @@
 		<p class="Central-text">Site is under construction! More buildings to come!!</p>
 				<div id="Form-text">
 					<p class="Central-text">Want to suggest a landmark? Submit your own below!</p>
-					<form onsubmit="submitIt(); return false;">
+					<form id="addForm" onsubmit="submitIt(); return false;">
 						<p>Name of the Landmark</p>
 						<input type="text" name="landmarkname" id="landmark-name" placeholder="Ex: MetLife Stadium" required>
-
+						<p>Upload an image</p>
+						<input type="file" id = "uploadImg" onchange="updateText()">
+						<input type="button" value="Upload Image" onclick="clickUpload()"> <br/>
+						<sub id ="betterFile">No file chosen</sub>
 						<p>Reason for adding the Landmark</p>
 						<textarea name="reasonswhy" id="landmark-reason" rows="10" cols="30" placeholder="Ex: They'll pay us to add it"></textarea>
 						<p>We will review your submission shortly (never tbh)</p>
-						<button>Submit Landmark!</button>
+						<input type="button" onclick="resetForm()" value="Reset Form">
+						<button>Submit Landmark</button>
+						<br/>
+					</form>
 				</div>
 	</div>
 

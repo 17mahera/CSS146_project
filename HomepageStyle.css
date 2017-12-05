@@ -5,8 +5,8 @@ body{
   background-image: url(http://www.sudarshanmondal.com/blog/wp-content/uploads/2015/07/SM_130721_ND800_DSC9406.jpg);
   color:white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin-top,margin-bottom: 5vh;
-  margin-left,margin-right: 5vw;
+  /*margin-top,margin-bottom: 5vh;
+  margin-left,margin-right: 5vw;*/
   font-weight: bold;
 
 }
@@ -19,13 +19,13 @@ img{
 #Explanation-text,#Form-text{
   text-align: center;
   background-color: rgba(25, 25, 112, 0.6);
-  height,width: 200px;
+  /*height,width: 200px;*/
   margin-left:150px;
   margin-right:150px;
 
 }
 #imagelist>div{
-  height,width: 200px;
+  /*height,width: 200px;*/
   margin:12px;
   background-color: rgba(128, 0, 0, 0.6);
   color: white;
@@ -33,23 +33,31 @@ img{
 
 }
 .Central-text{
-  margin-top,margin-bottom:2vh;
+ /* margin-top,margin-bottom:2vh;*/
   padding-bottom:2vh;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 #imagelist{
-  margin-top,margin-bottom: 5vh;
+  /*margin-top,margin-bottom: 5vh;*/
   object-fit: cover;
   flex-wrap: wrap;
   text-align: center;
   display:flex;
   justify-content: center;
 }
-.hob{color: red;
+
+.hob{
+  color: red;
 font-family: Courier New;
-font-weight: bold;}
+font-weight: bold;
+}
+
+sub{
+  font-weight: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /*css rules for phones*/
 @media only screen and (max-width:400px)
@@ -63,7 +71,7 @@ font-weight: bold;}
 {
   #contents{
     margin-top:1vh;
-    margin-left,margin-right:2vw;
+  /*  margin-left,margin-right:2vw;*/
   }
 }
 /*css rules for desktops*/
@@ -71,6 +79,6 @@ font-weight: bold;}
 {
   #contents{
     margin-top:3vh;
-    margin-left,margin-right:4vw;
+   /* margin-left,margin-right:4vw;*/
   }
 }

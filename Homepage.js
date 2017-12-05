@@ -1,4 +1,5 @@
 window.onload = () => {
+  document.getElementById('uploadImg').style.display= "none";
   var broboken = document.getElementById('hob');
   broboken.addEventListener("mouseover", function (e) {
 
@@ -15,14 +16,28 @@ window.onload = () => {
     broboken.style.color="white";
 });
 };
+
 function submitIt()
 {
   var landmarkname= document.getElementById('landmark-name').value;
   var landmarkreason= document.getElementById('landmark-reason').value;
-  //var = document.getElementById('').value;
-  addDirectlyToTheDamnList(landmarkname,landmarkreason);
+  var landmarkimg= document.createElement("img");
+
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+  
+  reader.addEventListener("load", function () {
+    landmarkimg.src = reader.result;
+  }, false);
+  
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+  else landmarkimg.src="./Image-Resources/no-image.png";
+  
+  addDirectlyToTheDamnList(landmarkname,landmarkreason, landmarkimg);
 }
-function addDirectlyToTheDamnList(landmarkname,landmarkreason)
+function addDirectlyToTheDamnList(landmarkname,landmarkreason, landmarkimg)
 {
 
   var parentDiv= document.createElement("div");
@@ -31,14 +46,22 @@ function addDirectlyToTheDamnList(landmarkname,landmarkreason)
   var linktext= document.createElement("a");
   linktext.alt=landmarkname;
   linktext.href="placeholder";
-  var imgtext= document.createElement("img");
-  imgtext.src="./Image-Resources/no-image.png";
-  linktext.appendChild(imgtext);
+  linktext.appendChild(landmarkimg);
   parentDiv.appendChild(nametext);
   parentDiv.appendChild(linktext);
 
   var theBigList= document.getElementById('imagelist');
 
   theBigList.appendChild(parentDiv);
+  window.scrollTo(0,document.body.scrollHeight);  
+};
 
+function resetForm(){
+  document.getElementById("addForm").reset();
+}
+function clickUpload(){
+  document.getElementById("uploadImg").click();
+}
+function updateText(){
+  document.getElementById("betterFile").textContent =  document.querySelector('input[type=file]').files[0].name;
 }
