@@ -58,6 +58,7 @@ function addDirectlyToTheDamnList(landmarkname,landmarkreason, landmarkimg)
 
 function resetForm(){
   document.getElementById("addForm").reset();
+  document.getElementById("betterFile").textContent =  "No file chosen";
 }
 function clickUpload(){
   document.getElementById("uploadImg").click();
