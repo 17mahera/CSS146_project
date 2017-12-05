@@ -1,5 +1,4 @@
 window.onload = () => {
-  //document.getElementById('uploadImg').style.display= "none";
   var broboken = document.getElementById('hob');
   broboken.addEventListener("mouseover", function (e) {
 

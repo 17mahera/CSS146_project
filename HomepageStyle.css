@@ -2,7 +2,7 @@ body{
   background-color: #D7DADB;
 }
 #contents{
-  background-image: url(http://www.sudarshanmondal.com/blog/wp-content/uploads/2015/07/SM_130721_ND800_DSC9406.jpg);
+  background-image: url("./Image-Resources/cityBack.jpg");
   color:white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   /*margin-top,margin-bottom: 5vh;
