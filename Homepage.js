@@ -1,5 +1,5 @@
 window.onload = () => {
-  document.getElementById('uploadImg').style.display= "none";
+  //document.getElementById('uploadImg').style.display= "none";
   var broboken = document.getElementById('hob');
   broboken.addEventListener("mouseover", function (e) {
 
@@ -23,7 +23,7 @@ function submitIt()
   var landmarkreason= document.getElementById('landmark-reason').value;
   var landmarkimg= document.createElement("img");
 
-  var file    = document.querySelector('input[type=file]').files[0];
+  var file = document.querySelector('input[type=file]').files[0];
   var reader  = new FileReader();
   
   reader.addEventListener("load", function () {

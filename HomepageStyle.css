@@ -59,6 +59,10 @@ sub{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#uploadImg{
+  display: none;
+}
+
 /*css rules for phones*/
 @media only screen and (max-width:400px)
 {
