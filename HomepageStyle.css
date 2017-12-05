@@ -16,7 +16,7 @@ img{
     margin: 12px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-#Explanation-text{
+#Explanation-text,#Form-text{
   text-align: center;
   background-color: rgba(25, 25, 112, 0.6);
   height,width: 200px;
