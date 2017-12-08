@@ -44,7 +44,7 @@ function addDirectlyToTheDamnList(landmarkname,landmarkreason, landmarkimg)
   nametext.innerHTML=landmarkname;
   var linktext= document.createElement("a");
   linktext.alt=landmarkname;
-  linktext.href="placeholder";
+  linktext.href="http://nicememe.website/";
   linktext.appendChild(landmarkimg);
   parentDiv.appendChild(nametext);
   parentDiv.appendChild(linktext);
